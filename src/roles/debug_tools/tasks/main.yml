@@ -4,3 +4,9 @@
     src: podman-print-secret
     dest: /usr/local/bin/podman-print-secret
     mode: '0755'
+
+- name: 'Install packages'
+  ansible.builtin.package:
+    name:
+      - tree
+      - vim
